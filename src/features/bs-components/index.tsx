@@ -2,7 +2,7 @@ import { Button, Breadcrumb, BreadcrumbItem, Form, FormGroup, Label, Input, Form
 Pagination, PaginationItem, PaginationLink, Progress, Spinner, Table } from 'reactstrap';
 
 
-const BsComponents = (props) => {
+const BsComponents = () => {
     return (
       <div className="BsComponents">
           <div>

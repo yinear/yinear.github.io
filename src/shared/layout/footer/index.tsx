@@ -1,6 +1,6 @@
 import {Row, Col} from 'reactstrap'
 
-const Footer = props => (
+const Footer = () => (
   <div className="footer">
     <Row>
       <Col md="12">
