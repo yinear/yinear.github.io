@@ -1,4 +1,5 @@
 import {Row, Col} from 'reactstrap'
+import './footer.scss';
 
 const Footer = () => (
   <div className="footer">

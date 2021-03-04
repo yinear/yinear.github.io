@@ -1,13 +1,22 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-dom';
 import './index.css';
 import App from './app/app';
+import { Provider } from 'react-redux';
 import reportWebVitals from './app/reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
+import initStore from './shared/redux/store';
+import DevTools from './shared/redux/devtools'
 
-ReactDOM.render(
+const devTools = process.env.NODE_ENV === 'development' ? <DevTools /> : null;
+const store = initStore();
+
+render(
   <React.Fragment>
-    <App />
+    <Provider store={store}>
+      {devTools}
+      <App />
+    </Provider>
   </React.Fragment>,
   document.getElementById('root')
 );
