@@ -9,10 +9,11 @@ import BsComponents from "../features/bs-components";
 
 const Routes = () => {
     return (
-      <div className="BsComponents">
+      <div className="Routes">
         <Switch>
             <Route exact path="/" component={Counter}>
             </Route>
+            <Route path="/counter" component={Counter} />
             <Route path="/bs-components">
               <BsComponents />
             </Route>

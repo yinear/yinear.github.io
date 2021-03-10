@@ -18,6 +18,9 @@ const Header = () => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
+              <NavLink href="/#/counter">Counter</NavLink>
+            </NavItem>
+            <NavItem>
               <NavLink href="/#/bs-components">Bs Components</NavLink>
             </NavItem>
             <NavItem>
